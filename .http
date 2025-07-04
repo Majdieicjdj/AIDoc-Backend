@@ -1,0 +1,16 @@
+@baseUrl = http://localhost:5000
+
+### Generate Document - Success Case
+POST {{baseUrl}}/generate-document
+Content-Type: application/json
+
+{
+    "prompt": "Write a comprehensive guide about machine learning.",
+    "doc_id": "ml_guide_0037",
+    "header": "22SE02CE037",
+    "alignment": "r"
+}
+
+
+###
+GET {{baseUrl}}/
